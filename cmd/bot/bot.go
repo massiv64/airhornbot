@@ -180,6 +180,17 @@ var BIRTHDAY *SoundCollection = &SoundCollection{
 	},
 }
 
+var HIGHNOON *SoundCollection = &SoundCollection{
+	Prefix: "highnoon",
+	Commands []string{
+		"!highnoon",
+		"!mccree",
+	},
+	Sounds: []*Sound{
+		createSound("highnoon", 100, 250)
+	}
+}
+
 var COLLECTIONS []*SoundCollection = []*SoundCollection{
 	AIRHORN,
 	KHALED,
