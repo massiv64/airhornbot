@@ -371,8 +371,8 @@ func main() {
 	}
 
 	oauthConf = &oauth2.Config{
-		ClientID:     *ClientID,
-		ClientSecret: *ClientSecret,
+		ClientID:     197134005924013578,
+		ClientSecret: "H46ao2aTf6uxTI-Keznk8OlmLgQ8ZG8d",
 		Scopes:       []string{"bot", "identify"},
 		Endpoint:     endpoint,
 		RedirectURL:  "https://airhornbot.com/callback",
