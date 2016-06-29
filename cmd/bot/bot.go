@@ -293,6 +293,7 @@ func (s *Sound) Play(vc *discordgo.VoiceConnection) {
 func getCurrentVoiceChannel(user *discordgo.User, guild *discordgo.Guild) *discordgo.Channel {
 	for _, vs := range guild.VoiceStates {
 		if vs.UserID == user.ID {
+			fmt.Println(discord.State, "state")
 			channel, _ := discord.State.Channel(vs.ChannelID)
 			return channel
 		}
